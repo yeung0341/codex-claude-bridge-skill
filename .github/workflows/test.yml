@@ -1,0 +1,17 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 -m py_compile mcp/claude_bridge/server.py
+      - run: python3 mcp/claude_bridge/server.py --help
+      - run: python3 scripts/smoke_mcp.py
