@@ -27,7 +27,7 @@ Run:
 ```bash
 git clone https://github.com/yeung0341/codex-claude-bridge-skill.git
 cd codex-claude-bridge-skill
-./install.sh
+bash install.sh
 ```
 
 Restart Codex after installation so the new skill and MCP server are loaded.
