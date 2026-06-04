@@ -1,0 +1,8 @@
+interface:
+  display_name: "Claude Bridge"
+  short_description: "Ask Claude Code for a second opinion"
+  brand_color: "#2F80ED"
+  default_prompt: "Use $claude to review this plan and tell Codex what to execute next."
+
+policy:
+  allow_implicit_invocation: false
